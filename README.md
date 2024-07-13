@@ -5,14 +5,20 @@
 This project involves building and deploying a Convolutional Neural Network (CNN) model to classify images from the CIFAR-10 dataset. The project is divided into two main parts: training the model and classifying images using the trained model.
 
 ## Project Structure
-.
 ├── train_model.py # Script for training the CNN model
+
 ├── classify_images.py # Script for classifying images using the trained model
+
 ├── images # Directory containing sample images for classification
+
 │ ├── airplane.jpg
+
 │ ├── cat.jpg
+
 │ ├── dog.jpg
+
 │ └── ship.jpg
+
 ├── cifar10_cnn_model.h5 # Saved trained model (generated after running train_model.py)
 
 ## Getting Started
@@ -36,11 +42,17 @@ To train the CNN model, run the train_model.py script:
 python train_model.py
 
 This script will:
+
 Load and preprocess the CIFAR-10 dataset.
+
 Define and compile a CNN model.
+
 Train the model for 10 epochs.
+
 Evaluate the model on the test dataset.
+
 Save the trained model to cifar10_cnn_model.h5.
+
 
 
 ## Classifying Images
@@ -48,15 +60,23 @@ To classify new images using the trained model, run the classify_images.py scrip
 python classify_images.py
 
 This script will:
+
 Load the saved model (cifar10_cnn_model.h5).
+
 Define a function to preprocess and classify images.
+
 Classify and display the specified images from the images directory.
+
 
 ## Model Architecture
 Input Layer: 32x32x3 images
+
 Convolutional Layers: Three Conv2D layers with ReLU activation
+
 Pooling Layers: Two MaxPooling2D layers
+
 Dense Layers: Two Dense layers with ReLU activation
+
 Output Layer: Dense layer with 10 units (one for each class) and softmax activation
 
 
